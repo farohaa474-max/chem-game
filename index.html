@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Chem Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>لعبة الكيمياء 🧪</h1>
+    <p>اختاري الإجابة الصحيحة</p>
+</header>
+
+<main>
+
+    <button onclick="startGame()">ابدأ اللعبة</button>
+
+    <div id="questionBox" style="display:none;">
+        <h2 id="question"></h2>
+
+        <input id="answer" type="text" placeholder="اكتبي الإجابة">
+        <button onclick="checkAnswer()">تحقق</button>
+
+        <p id="result"></p>
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
