@@ -1,33 +1,51 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>Chem Game</title>
-
+    <title>Elements of Life</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <h1>لعبة الكيمياء 🧪</h1>
-    <p>اختاري الإجابة الصحيحة</p>
-</header>
+    <!-- زر المساعدة -->
+    <div class="help">؟</div>
 
-<main>
-
-    <button onclick="startGame()">ابدأ اللعبة</button>
-
-    <div id="questionBox" style="display:none;">
-        <h2 id="question"></h2>
-
-        <input id="answer" type="text" placeholder="اكتبي الإجابة">
-        <button onclick="checkAnswer()">تحقق</button>
-
-        <p id="result"></p>
+    <!-- العنوان -->
+    <div class="title">
+        <h1>START</h1>
     </div>
 
-</main>
+    <!-- مستويات اللعبة -->
+    <div class="levels">
+        <div class="level">سهل</div>
+        <div class="level">متوسط</div>
+        <div class="level">صعب</div>
+        <p class="choose">اختر نفسك!</p>
+    </div>
+
+    <!-- الشخصية -->
+    <div class="character-section">
+        <img src="character.png" alt="الشخصية" class="character">
+        <div class="speech">مرحبًا</div>
+
+        <!-- شريط التقدم -->
+        <div class="progress-bar">
+            <div class="star"></div>
+        </div>
+    </div>
+
+    <!-- زر المكتبة -->
+    <div class="library-btn">
+        المكتبة
+    </div>
+
+    <!-- الشعار -->
+    <div class="logo">
+        ELEMENTS <br> OF LIFE
+    </div>
+
+</body>
+</html>
 
 <script src="script.js"></script>
 
