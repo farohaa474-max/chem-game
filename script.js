@@ -32,3 +32,27 @@ function updateProgress(level){
     let progress = (level / totalLevels) * 100;
     document.getElementById("progressBar").style.width = progress + "%";
 }
+const totalCards = 80; 
+let unlockedCards = 0;  
+
+const library = document.getElementById("library");
+
+// توليد البطاقات
+for(let i=1; i<=totalCards; i++){
+    let card = document.createElement("div");
+    card.classList.add("card");
+    card.innerText = `Card ${i}`;
+    library.appendChild(card);
+}
+
+// وظيفة فتح بطاقة جديدة بعد إنهاء مرحلة
+function unlockCard() {
+    if(unlockedCards < totalCards){
+        const cardToUnlock = library.children[unlockedCards];
+        cardToUnlock.classList.add("unlocked");
+        unlockedCards++;
+    }
+}
+
+// مثال: بعد إنهاء مرحلة، نفتح بطاقة جديدة
+// unlockCard();

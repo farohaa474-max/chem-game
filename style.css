@@ -236,3 +236,61 @@ body{
     display:block;
     margin:auto;
 }
+/* الخلفية */
+body{
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* الشخصية */
+#character{
+    width:120px;
+    display:block;
+    margin: 20px auto;
+}
+
+/* الأزرار */
+button{
+    padding:12px 25px;
+    border-radius:10px;
+    border:none;
+    cursor:pointer;
+    background:#5b7cff;
+    color:white;
+    font-weight:bold;
+    transition:0.2s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+/* البطاقات */
+.card{
+    width:120px;
+    height:150px;
+    display:inline-block;
+    margin:10px;
+    border-radius:10px;
+    background:#ccc;
+    text-align:center;
+    vertical-align:top;
+    cursor: not-allowed;
+    color: transparent;
+    line-height:150px;
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+}
+
+.card.unlocked{
+    background:#5b7cff;
+    color:white;
+    cursor:pointer;
+}
