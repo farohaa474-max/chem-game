@@ -1,21 +1,118 @@
 body {
-    font-family: Arial;
+    margin: 0;
+    font-family: 'Tahoma', sans-serif;
+    background: linear-gradient(to top, #7ec850 30%, #87ceeb 100%);
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* زر المساعدة */
+.help {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: orange;
+    cursor: pointer;
+}
+
+/* العنوان */
+.title {
     text-align: center;
-    background: #f0f8ff;
+    margin-top: 40px;
 }
 
-header {
-    background: #0077cc;
-    color: white;
-    padding: 15px;
+.title h1 {
+    background: white;
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 3px solid black;
 }
 
-button {
-    padding: 10px;
-    margin: 10px;
-    font-size: 16px;
+/* المستويات */
+.levels {
+    position: absolute;
+    left: 50px;
+    top: 150px;
+    text-align: center;
 }
 
-input {
-    padding: 8px;
+.level {
+    background: #c97b3b;
+    padding: 15px 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    box-shadow: 3px 3px 0 #8b4f1f;
+    cursor: pointer;
+}
+
+.choose {
+    color: red;
+    font-weight: bold;
+}
+
+/* الشخصية */
+.character-section {
+    position: absolute;
+    right: 200px;
+    bottom: 120px;
+    text-align: center;
+}
+
+.character {
+    width: 150px;
+}
+
+.speech {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: -50px;
+    right: 50px;
+    border: 2px solid black;
+}
+
+/* شريط التقدم */
+.progress-bar {
+    width: 300px;
+    height: 25px;
+    background: #a97142;
+    border-radius: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.star {
+    width: 25px;
+    height: 25px;
+    background: gold;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+}
+
+/* زر المكتبة */
+.library-btn {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    background: #d9b38c;
+    padding: 15px 30px;
+    border: 3px solid #8b5a2b;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* الشعار */
+.logo {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    font-weight: bold;
+    color: #fff;
 }
