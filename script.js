@@ -19,3 +19,16 @@ function checkAnswer() {
     }
 
 }
+alert("أحسنتِ 🎉");
+progressBar.style.width = level*10 + "%";
+function showWinMessage(){
+    alert("أحسنتِ 🎉 لقد أنهيت المرحلة!");
+}
+// مثال عند تجاوز مرحلة
+if(levelComplete){
+    showWinMessage();
+}
+function updateProgress(level){
+    let progress = (level / totalLevels) * 100;
+    document.getElementById("progressBar").style.width = progress + "%";
+}
