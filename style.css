@@ -294,3 +294,14 @@ button:hover{
     color:white;
     cursor:pointer;
 }
+
+body {
+    margin: 0;
+    font-family: 'Tahoma', sans-serif;
+    height: 100vh;
+
+    background-image: url("images/background.jpg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
