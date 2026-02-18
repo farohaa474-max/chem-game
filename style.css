@@ -6,6 +6,27 @@ body {
     overflow: hidden;
 }
 
+/* إعدادات عامة للصفحة */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    /* صورة الخلفية */
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    /* مهم عشان يحافظ على البكسلات */
+    image-rendering: pixelated;
+
+    /* خط بكسلي */
+    font-family: 'Press Start 2P', cursive;
+
+    overflow: hidden;
+}
+
 /* زر المساعدة */
 .help {
     position: absolute;
