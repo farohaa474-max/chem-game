@@ -1,9 +1,12 @@
 body {
     margin: 0;
     font-family: 'Tahoma', sans-serif;
-    background: linear-gradient(to top, #7ec850 30%, #87ceeb 100%);
     height: 100vh;
-    overflow: hidden;
+
+    background-image: url("images/background.jpg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* زر المساعدة */
@@ -295,13 +298,4 @@ button:hover{
     cursor:pointer;
 }
 
-body {
-    margin: 0;
-    font-family: 'Tahoma', sans-serif;
-    height: 100vh;
 
-    background-image: url("images/background.jpg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
