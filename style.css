@@ -6,39 +6,6 @@ body {
     overflow: hidden;
 }
 
-/* إعدادات عامة للصفحة */
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-
-    /* صورة الخلفية */
-    background-image: url("background.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-
-    /* مهم عشان يحافظ على البكسلات */
-    image-rendering: pixelated;
-
-    /* خط بكسلي */
-    font-family: 'Press Start 2P', cursive;
-
-    overflow: hidden;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-
-    background-image: url("background.png");
-    background-repeat: repeat-x; /* يكرر أفقياً */
-    background-size: auto 100%;
-
-    image-rendering: pixelated;
-}
-
 /* زر المساعدة */
 .help {
     position: absolute;
@@ -53,13 +20,6 @@ body {
 .title {
     text-align: center;
     margin-top: 40px;
-}
-
-button {
-    image-rendering: pixelated;
-    border: 4px solid black;
-    box-shadow: 4px 4px 0px black;
-    font-family: 'Press Start 2P', cursive;
 }
 
 .title h1 {
