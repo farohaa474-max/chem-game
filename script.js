@@ -33,7 +33,7 @@ function updateProgress(level){
     document.getElementById("progressBar").style.width = progress + "%";
 }
 const totalCards = 80; 
-let unlockedCards = 0;  
+let unlockedCards = parseInt(localStorage.getItem("unlockedCards")) || 0;  
 
 const library = document.getElementById("library");
 
@@ -44,6 +44,9 @@ for(let i=1; i<=totalCards; i++){
     card.innerText = `Card ${i}`;
     library.appendChild(card);
 }
+for(let i = 0; i < unlockedCards; i++){
+   library.children[i].classList.add("unlocked");
+}
 
 // وظيفة فتح بطاقة جديدة بعد إنهاء مرحلة
 function unlockCard() {
@@ -51,6 +54,8 @@ function unlockCard() {
         const cardToUnlock = library.children[unlockedCards];
         cardToUnlock.classList.add("unlocked");
         unlockedCards++;
+        
+        localStorage.setItem("unlockedCards", unlockedCards);
     }
 }
 
